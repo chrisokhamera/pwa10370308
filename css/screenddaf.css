@@ -1,0 +1,1952 @@
+/* @group General styles */
+
+/*
+Resets styles then adds basic typographical styling
+By Mark Wallis, markwallis.ie
+*/
+
+/* @group Reset */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+} 
+
+.showcaseSmallBannerWrapper {width:231px; height:133px; margin-bottom:10px;}
+.showcaseSmallBannerContainer {height:123px; width:221px; background:#efefef; padding:5px;}
+.showcaseSmallBanner {position:absolute; z-index:0;}
+.showcaseSmallBannerCorners {position:absolute; z-index:-1;}
+
+
+
+/* HOMEPAGE BANNER */
+
+.RAWR {
+margin-left:0px;
+width:950px;
+}
+
+#homeBannerWrapper {
+	width:950px;
+}
+
+#homeBannerShadow {
+	background:url('../images/content-shadow.png') repeat-x;
+	position:absolute;
+	height:20px;
+	margin-left:0px;
+	width:950px;
+	clear:right;
+}
+
+#homeBannerWrapper a {
+	color:#ffffff;
+	text-decoration:none;
+}
+
+#homeBanner {
+	height:287px;
+	text-align:left;
+}
+
+#homeBannerImage {
+	position:absolute; 
+	height:287px; 
+	width:950px;
+}
+
+#homeBannerCaptionWrapper { 
+	background:url('../images/hb-dark.png') repeat-x; 
+	height:63px; 
+	width:870px;
+	position:absolute;
+	margin-top:224px;
+	text-align:left;
+	color:#ffffff;
+	padding:6px 18px 0px 18px;
+	cursor:hand;
+}
+
+#homeBannerCaption {
+	width:380px;
+}
+
+#homeBannerCaption h2 {
+	margin:0px;
+	font-size:24px;
+	height:1.2em;
+	overflow:hidden;
+	cursor:hand;
+}
+
+#homeBannerCaption p {
+	margin:0px;
+	padding-right:24px;
+	font-family:"Myriad Pro",arial,helvetica,sans-serif;
+	font-size:15px;
+	background:url('../images/hb-button.png') no-repeat right; 
+	float:left;
+	height:1.2em;
+	overflow:hidden;
+	cursor:hand;
+}
+
+#homeBannerRight {
+	background:url('../images/hb-light.png') repeat-y right; 
+	height:287px; 
+	width:394px;
+	position:absolute;
+	margin-left:556px;
+	text-align:right;
+}
+
+#homeBannerPreviewsWrapper {
+	margin-left:84px;
+	width:310px;
+}
+
+#homeBannerPreviews {
+	margin-top:3px;
+	padding-top:6px;
+	padding-left:10px;
+	width:300px;
+	height:205px;
+	background-image:url('../images/preview_bg.png');
+	background-repeat:no-repeat;
+}
+
+#homeBannerPreviewCaptionWrapper { 
+	height:32px; 
+	width:290px;
+	position:relative;
+	margin-top:0px;
+	text-align:left;
+	color:#ffffff;
+	padding:0px 0px 0px 0px;
+	cursor:hand;
+}
+
+#homeBannerPreviewCaption {
+	width:215px;
+	padding:1px 0px 0px 4px;
+	float:left;
+}
+
+#homeBannerPreviewCaption h2 {
+	margin:0px;
+	font-size:14px;
+	height:1.2em;
+	overflow:hidden;
+	cursor:hand;
+	width:215px;
+}
+
+#homeBannerPreviewCaption p {
+	margin:0px;
+	padding-right:0px;
+	font-family:"Myriad Pro",arial,helvetica,sans-serif;
+	font-size:10px;
+	float:left;
+	height:1.2em;
+	overflow:hidden;
+	cursor:hand;
+	width:215px;
+}
+
+#homeBannerPreviewCaptionTitle {
+color:#fff;
+}
+
+#homeBannerBook {
+	position:relative;
+	margin:0px 6px 0px 0px;
+}
+
+#homeBannerNav {
+	position:absolute;
+	margin-left:470px;
+	top:280px;
+}
+
+.homeBannerNavPoster {
+	height:79px; 
+	border:none; 
+	float:left; 
+	margin-left:2px;
+}
+
+#homeBannerNav a:hover img {
+	border:1px solid #ffffff; 
+}
+
+
+
+
+
+table.tableWrapper {
+	width:100%;
+	background:#ffffff;
+	padding:0px;
+	border-collapse:collapse;
+	clear:both;
+}
+
+table.tableWrapper table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table.tableWrapper th {
+	background:url('../images/titlebar-bg.html') #3a3e71 repeat-x;
+	text-align:left;
+	color:#ffffff;
+	font-weight:normal;
+	font-size:18px;
+	padding:4px 8px;
+	margin:0px;
+}
+
+table.tableWrapper td {
+	border:1px solid #cccccc;
+	border-top:0px;
+}
+
+div.tableShowingsWrapper {
+	padding:8px;
+}
+
+div.tableShowingsWrapper.even {
+	background-color:#eeeeee;
+}
+
+table.tableShowings td {
+	border:0px;
+	vertical-align:bottom;
+	text-align:left;
+}
+
+table.tableShowings td.moviePoster {
+	vertical-align:top;
+	padding-right:8px;
+	width:1px;
+}
+
+table.tableShowings td.moviePoster img {
+	width:94px;
+}
+
+table.tableShowings td.movieTitle {
+	height:42px;
+	font-size:24px;
+}
+
+table.tableShowings td.movieInfo {
+	font-family:"Myriad Pro",arial,helvetica,sans-serif;
+	font-size:11px;
+	height:1px;
+	padding-bottom:8px;
+}
+
+table.tableShowings td.movieTimes {
+	height:1px;
+	background:#ffffff;
+	padding:4px;
+	border:1px solid #cccccc;
+}
+
+table.tableShowings td.movieTimes td {
+	text-align:center;
+	padding:8px;
+}
+
+table.tableShowings td.movieTimes td a { 
+	color:#015585; 
+	display:block; 
+	font-size:12px; 
+	text-decoration:none; 
+}
+
+table.tableShowings td.movieTimes td a div.movieTime { 
+	line-height:0.9em; 
+	font-size:24px; 
+	font-weight:bold; 
+	font-family:"MyriadPro-Bold","Myriad Pro Bold","Myriad Pro",arial,helvetica,sans-serif; 
+}
+
+table.tableShowings td.movieTimes td.soldOut { 
+	color:#cc0000; 
+	display:block; 
+	font-size:12px; 
+	text-decoration:none; 
+}
+
+table.tableShowings td.movieTimes td.soldOut div.movieTime { 
+	color:#cc0000; 
+	line-height:0.9em; 
+	font-size:24px; 
+	font-weight:bold; 
+	font-family:"MyriadPro-Bold","Myriad Pro Bold","Myriad Pro",arial,helvetica,sans-serif; 
+}
+
+table.tableShowings td.movieTimes table { 
+	width:100%; 
+}
+
+table.tableShowings td.movieTimes tr.odd { 
+	background:#c9ebf5; 
+}
+
+
+
+
+
+div#movieTimesNavWrapper {
+	margin-top:10px;
+	text-align:left;
+	width: 625px;
+}
+
+div#movieTimesNavWrapper h3 {
+	padding-left:8px;
+	position:absolute;
+	font-size:18px;
+	background:url('../images/arrows.png') no-repeat right bottom;
+	padding-right:18px;
+	float:left;
+	margin-top:20px;
+}
+
+div#movieTimesNav {
+	float:left;
+	width:625px;
+	padding-left:2px;
+	padding-top:2px;
+	margin-bottom:-10px;
+}
+
+ul.tabs {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+} 
+
+.tabs li {
+	margin-left: 1px;
+	padding: 0px 0px;
+	width:71px;
+	height:46px;
+	list-style: none;
+	display: block;
+	float:left;
+	background:url("../images/tab-inactive.png") no-repeat;
+	color:#fff;
+	text-align:left;
+}
+
+.tabs li .day {
+	margin:5px 0px 0px 8px;
+	font-size:15px;
+	height:1.2em;
+}
+
+.tabs li .date {
+	margin:0px 0px 0px 8px;
+	font-size:14px;
+	line-height:0.9em;
+}
+
+.tabs li a {
+	color:#fff;
+	text-decoration:none;
+}
+	
+ul.tabs li.tab-active {
+	background:url("../images/tab-active.png") no-repeat;
+}
+
+ul.tabs li.tab-alt {
+	background:url("../images/tab-alt.png") no-repeat;
+}
+
+.wizbg {
+	height: 842px;
+	width: 595px;
+	display: block;
+	float: left;
+	background-image: url(../images/brdr.html);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+body {
+	margin: 0 auto;
+	position: relative;
+	/*background: #000000 url("/images/site_bg.jpg") no-repeat top fixed;*/
+	color: #333;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	line-height: 1.5; /* Baseline grid of 18px */
+	text-align: center;
+
+}
+em{
+	text-decoration:none;
+	font-style:normal;
+	font-weight:bold;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+:focus {
+	outline: 0;
+}
+/* tables may still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* @end Reset */
+
+/* @group Font sizes */
+
+/* basic font sizes */
+p, ul, ol, dl, table, address, blockquote, fieldset, pre, form div {
+	font-size: 1em;  /* 12px */
+}
+/* deal with likely (but certainly not all) inherited shrinkage */
+ul p, ol p, table p, dl p, ul ul, ol ol, ul ol, ol ul, address p, blockquote p, form div div, form div p, fieldset div, table form div {
+	font-size: 1em;
+}
+sup {
+	font-size: .83em;
+	vertical-align: super;
+}
+/* @end Font sizes */
+
+/* @group Margins */
+
+p, ul, ol, dl, address, table, blockquote, pre, fieldset {
+	margin-bottom: 1em; /* 12px */
+}
+form {
+}
+ul ul, ol ol, ol ul, ul ol {
+	margin-bottom: 0;
+}
+/* @end Margins */
+
+/* @group Links */
+
+a {
+	color: #9f8400;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:visited {
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+}
+/* @end Links */
+
+/* @group Headings */
+
+h1 {
+	font-size: 24px;
+	line-height: 2em; 			/* 48px */
+	margin-top: 0;
+	margin-bottom: 15px;
+	color: #103253;
+	font-weight: normal;
+	border-bottom: 1px solid #efefef;
+}
+h2 {
+	font-size: 18px;
+	color: #103253;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.2857em;
+	color: #103253;
+}
+h4, h5, h6 {
+	color: #103253;
+	font-size: 12px;
+}
+/* @end Headings */
+
+/* @group Lists */
+
+.prose ul, ul.bullets, ul.bullets ul {	/* unordered lists more often DON'T require bullets except in extended bits of writing - use the .prose class or apply directly with .bullets */
+	list-style-type: disc;
+	margin-left: 1.5em; /* 18px */
+}
+.bullets li {
+	margin-top: 1em;			/*  12px */
+	margin-bottom: 1.5em;		/* 18px */
+}
+ol {
+}
+dt {
+	color: #103253;
+	font-weight: normal;
+	font-size: 16px;
+}
+dd {
+	margin-bottom: 20px;
+}
+/* @end Lists */
+
+/* @group Tables */
+
+table {
+}
+caption {
+}
+thead th {
+}
+tbody {
+}
+tbody tr th, tbody tr td {
+}
+th, td {
+  vertical-align: top;
+}
+/* @end Tables */
+
+/* @end General styles*/
+
+/* @group Helper styles */
+.container {
+	background: #efefef;
+	padding: 5px 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.pull-left {
+	display: block;
+	float: left;
+}
+.pull-left-inline {
+	display: inline;
+	float: left;
+}
+.right-gutter {
+	margin: 0 20px 20px 0;
+}
+.outline {
+	padding: 1px;
+	border: 1px solid #ccc;
+}
+.pull-right {
+	display: block;
+	float: right;
+}
+.pull-right-inline {
+	display: inline;
+	float: right;
+}
+.top {
+	background: url(../images/top.gif) no-repeat;
+	height: 10px;
+}
+.btm {
+	background: url(../images/btm.gif) no-repeat;
+	height: 10px;
+	margin-bottom: 10px;
+}
+.col {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+.last-col {
+	float: left;
+	margin: 0 0 10px 0;
+}
+.span3 {
+	width: 230px;
+}
+.span4 {
+	width: 310px;
+}
+.notes {
+	text-align: center;
+}
+.alert {
+	background-color: #fefed6;
+	border: 1px solid #e8b72d;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.alert p {
+	margin-bottom: 0px;
+}
+.payment {
+	background-color: #efefef;
+	color: #000;
+	font-size: 18px;
+	padding: 20px 10px 20px 70px;
+}
+.success {
+	background-image: url(../images/payment-success.html);
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+}
+.note {
+	background: url(../images/alert.html) no-repeat 0 50%;
+	color: #666;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+.details {
+	list-style-position: inside;
+}
+.details li {
+	margin-bottom: 0.75em;
+}
+.clear-thumbnail {
+	float: left;
+	margin-left: 67px;
+}
+/* @end Helper styles*/
+
+/* @group Landing */
+
+#landing {
+	background: #fff url(../images/landing-tile.html) repeat-y;
+	width: 630px;
+	margin: 50px auto;
+	text-align: left;
+}
+#landing-top {
+	background:url(../images/landing-top.html) no-repeat;
+	height: 10px;
+	width: 630px;
+}
+#landing-btm {
+	background:url(../images/landing-btm.html) no-repeat;
+	height: 10px;
+	width: 630px;
+}
+#landing p {
+	font-size: 24px;
+}
+#landing form {
+	margin: 50px auto;
+}
+#landing select {
+	font-size: 32px;
+	padding: 5px;
+}
+/* @end Landing */
+
+/* @group Page Layout */
+#site-container {
+	width: 990px;
+	text-align: left;
+	margin: 120px auto;
+	margin-bottom: 0px;
+}
+#main {
+	background: #fff url(../images/tile.gif) repeat-y;
+}
+#primary {
+	float: left;
+	width: 630px;
+	padding-bottom: 20px;
+}
+
+#primary2 {
+	margin-top:10px;
+	float: left;
+	width: 630px;
+	padding-bottom: 20px;
+}
+
+#secondary {
+	float: right;
+	width: 310px;
+}
+
+#secondary2 {
+	margin-top:10px;
+	float: right;
+	width: 310px;
+}
+
+
+.wrap-all {
+	margin: 0 auto;
+	width: 950px;
+	overflow: hidden;
+}
+.wrap-inner {
+	margin: 10px;
+}
+.wrap-primary {
+	width: 630px;
+	overflow: hidden;
+}
+.wrap-primary h2 {
+	margin-bottom: 0.5em;
+}
+.wrap-primary p, .wrap-primary li {
+	line-height: 1.6em;
+}
+/* @group Sub Nav */
+
+#sub-nav {
+	background: #efefef;
+	padding: 20px 0;
+}
+#sub-nav li {
+	background: #efefef;
+}
+.first {
+	border-top: 1px solid #e0e0e0;
+}
+.first a {
+	border-top: 1px solid #fff;
+}
+#sub-nav a {
+	background: url(../images/sub-nav-tile.gif) repeat-x 0 100%;
+	border-bottom: none;
+	color: #666;
+	display: block;
+	font-size: 13px;
+	text-align: left;
+	line-height: 2.5em;
+	padding-left: 20px;
+}
+#sub-nav a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+#sub-nav a#sub-selected {
+	background-color: #fff;
+	color: #333;
+	font-weight: bold;
+}
+/* @end */
+
+/* @group Section */
+.section {
+	border: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+.section h2 {
+	background: #00345f;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 8px;
+	text-transform: uppercase;
+	line-height: 1.75em;	/* 21px */
+}
+.section img {
+	background: #fff;
+	border: 1px solid #cfcfcf;
+	padding: 2px;
+}
+/* @end Section */
+
+/* @group Content */
+.content h1 {
+}
+/* @end Content */
+
+/* @group Book Tickets Now */
+#book-tickets-now {
+	background: url(../images/book-tickets-now.html) no-repeat;
+	display: block;
+	height: 42px;
+	width: 291px;
+	text-indent: -9999px;
+	margin: 0 auto;
+}
+a#book-tickets-now:hover {
+	background-position: 0 -42px;
+}
+/* @end Book Tickets Now */
+
+
+
+/* @group Masthead */
+#masthead {
+	background: url(../images/top.gif) no-repeat;
+	margin-bottom: 10px;
+	padding: 15px 20px 0 20px;
+	padding-top: 95px;
+	position: relative;
+}
+#masthead h1 {
+	height: 61px;
+	width: 163px;
+	margin: 0;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#masthead h1 a {
+	display: block;
+}
+#logo {
+	display: block;
+	height: 62px;
+	width: 163px;
+	margin: 0;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+/* @end Masthead */
+
+/* @group Intro */
+#intro {
+	background: #fff url(../images/intro-tile.gif) repeat-x 0 100%;
+	height: 36px;
+	width: 780px;
+	position:absolute;
+	right: 0;
+	top: 50px;
+}
+#top-advert {
+	height: 90px;
+	width: 728px;
+	position:absolute;
+	left: 240px;
+	top: 15px;
+}
+#intro p {
+	background: url(../images/intro-end.gif) no-repeat;
+	padding-left: 20px;
+	height: 100%;
+	margin: 0;
+}
+#intro p span {
+	background: url(../images/intro-star.gif) no-repeat 0 50%;
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-top: 5px;
+	margin-right: 5px;
+}
+#intro p a {
+	display: block;
+	float: left;
+	margin-top: 10px;
+	padding: 0 2px;
+}
+/* @end Intro */
+
+/* @group Nav */
+#nav {
+	background: #00325a url(../images/nav-tile.gif) no-repeat;
+}
+#nav #navM-DUNDRUM{
+	background: url(../images/nav-left.gif) no-repeat;
+	padding-left: 11px;
+	margin-top: 20px;
+}
+#nav #navM-SWORDS{
+	background: url(../images/nav-left.gif) no-repeat;
+	padding-left: 3px;
+	margin-top: 20px;
+}
+#nav div ul {
+	background: url(../images/nav-right.gif) no-repeat 100% 0;
+	overflow: hidden;
+}
+#nav li {
+	float: left;
+}
+#nav a {
+	color: #ebebeb;
+	display: block;
+	text-transform: uppercase;
+	line-height: 3em;
+	padding: 0 10px;
+	text-decoration: none;
+}
+a#selected, #nav a:hover {
+	background: #002447 url(../images/nav-selected-tile.gif) repeat-x;
+	color: #fff;
+}
+/* @end Nav */
+
+/* @group Home Ads */
+#home-ads {
+	float: left;
+	width: 230px;
+}
+/* @end Home Ads */
+
+/* @group Staff Pick */
+#staff-pick {
+	float: right;
+	height: 263px;
+	width: 388px;
+}
+#staff-pick ul {
+	margin: 20px;
+}
+#staff-pick h3 {
+	margin: 0;
+	margin-bottom: 5px;
+}
+#staff-pick p {
+	margin: 0 0 5px 0;
+}
+#staff-pick li {
+	margin-left: 120px;
+}
+#staff-pick li#staff-thumbnail {
+	float: left;
+	margin-left: 0;
+}
+#rating {
+	background-image: url(../images/stars.gif);
+	background-repeat: no-repeat;
+	height: 11px;
+	width: 55px;
+}
+.stars-1 {
+	background-position: 0 -44px;
+}
+.stars-2 {
+	background-position: 0 -33px;
+}
+.stars-3 {
+	background-position: 0 -22px;
+}
+.stars-4 {
+	background-position: 0 -11px;
+}
+.stars-5 {
+	background-position: 0 0;
+}
+/* @end Staff Pick */
+
+/* @group Showtimes */
+
+#showtimes {
+}
+
+#dateselection {
+	background: #00345F;
+	color: #FFFFFF;
+	width: 53%;
+	height: 43px;
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.datenav {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0d313), color-stop(1, #d1ac06) );
+	background:-moz-linear-gradient( center top, #f0d313 5%, #d1ac06 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0d313', endColorstr='#d1ac06');
+	background-color:#f0d313;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:18px;
+	line-height:18px;
+	width:106px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #cc9f52;
+	margin-bottom: 5px;
+}
+.datenav:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d1ac06), color-stop(1, #f0d313) );
+	background:-moz-linear-gradient( center top, #d1ac06 5%, #f0d313 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ac06', endColorstr='#f0d313');
+	background-color:#d1ac06;
+}
+.datenav:active {
+	position:relative;
+	top:1px;
+}
+
+#date-select {
+	background: #00345F;
+	color: #FFFFFF;
+	border: 0px;
+	width: 46%;
+	height: 48px;
+	overflow: hidden;
+	font-size: 12px;
+
+}
+#date-select p {
+	float: left;
+	font-weight: bold;
+	line-height: 2em;
+	padding-left: 8px;
+}
+#date-select form {
+	margin: 2px 2px 2px 0;
+	padding-left: 8px;
+	float: right;
+	padding-top: 4px;
+}
+#date-select select {
+	font-size: 11px;
+	padding: 2px;
+	height: 36px;
+}
+#showtimes ol {
+	margin: 10px;
+	list-style:none;
+}
+#showtimes ol li {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+/* @group Movie */
+.movie {
+	width: 610px;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.movie img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 94px;
+	height: 133px}
+.movie h3 {
+}
+.movie h3 a {
+	color: #103253;
+	font-size: 18px;
+	font-weight: normal;
+}
+.movie p {
+	margin: 0 0 5px 110px;
+}
+.featured {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+}
+.featured-content {
+	margin: 20px;
+}
+.featured h2 {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 1em;
+}
+.featured img {
+	border: 5px solid #fff;
+}
+/* @end Movie */
+
+.times table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.times th, .times td {
+	border: 1px solid #fff;
+	line-height: 2em;
+}
+.times th {
+	background-color: #f2f2f2;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 20px;
+	line-height: 0em;
+	vertical-align:middle;
+}
+.times td {
+	text-align: center;
+}
+.times td a {
+	color: #015585;
+	display: block;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: MyriadPro-Light, 'Myriad Pro Light', 'Myriad Pro', arial, helvetica, sans-serif;
+}
+.movieTime {
+	font-size: 24px;
+	font-weight: bold;
+}
+.movieTimeSpecial {
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 0px;
+}
+.times td a.mz {
+	background: #FFDA45 no-repeat 100% 1px;
+}
+.times td a.kdz {
+	background: #CCE6FF no-repeat 100% 1px;
+}
+.times td a.sub {
+	background: #a7f486 no-repeat 100% 1px;
+}
+.times td a.reel {
+	background: #FF6FBB no-repeat 100% 1px;
+}
+.times td a.spne {
+	background: #A490CE no-repeat 100% 1px;
+}
+.times td a.norm {
+	background: #FFF5CC no-repeat 100% 1px;
+}
+.times td a.soldOut {
+	background: #FF4634 no-repeat 100% 1px;
+}
+/* @group Booking Details */
+
+.booking-details {
+	border: 1px solid #ccc;
+	padding: 1px;
+	margin-bottom: 10px;
+}
+.booking-details form {
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+.booking-details li {
+	width: 560px;
+	overflow: hidden;
+}
+.booking-details label {
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding-right: 10px;
+	text-align: right;
+	width: 180px;
+}
+.booking-details select {
+	font-size: 14px;
+	padding: 2px;
+	width: 180px;
+}
+.booking-details h4 {
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#month, #year {
+	width: 117px;
+}
+.booking-note {
+	color: #666;
+	display: block;
+	margin-left: 190px;
+	font-style: italic;
+}
+/* @end Booking Details */
+
+/* @group Order Details */
+
+#order-details {
+	background-color: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+#order-details h4 {
+	color:#666666;
+	font-size:14px;
+	margin-bottom: 10px;
+}
+#order-details th, #order-details td {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+/* @end Order Details */
+
+/* @group Seats */
+#seats {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+/* @end Seats */
+
+/* @end Showtimes */
+
+/* @group New This Week */
+#new-this-week {
+	padding: 20px;
+}
+#new-this-week ul {
+	list-style: none;
+	margin-bottom: 10px;
+}
+#new-this-week li {
+	border-bottom: 1px solid #efefef;
+	width: 270px;
+	overflow: hidden;
+}
+#new-this-week li a {
+	color: #103253;
+	font-weight: normal;
+}
+.new-title {
+	display: block;
+	float: left;
+	line-height: 2em;
+}
+.new-details {
+	float: right;
+	padding-top: 4px;
+}
+.new-details a {
+	display: block;
+	float: left;
+	height: 16px;
+	width: 16px;
+	margin-right: 5px;
+	text-indent: -9999px;
+}
+.new-details a.info {
+	background: url(../images/movie-info.html)
+}
+.new-details a.trailer {
+	background: url(../images/view-trailer.html)
+}
+.new-details a:hover {
+	background-position: 0 -16px;
+}
+/* @end New This Week */
+
+/* @group ft */
+#ft {
+	background: #fff url(../images/tile.gif) repeat-y;
+}
+#ft .wrap-all {
+	padding-top: 5px;
+}
+#ft li {
+	line-height: 2em;
+}
+#ft a {
+	color: #333;
+	font-weight: normal;
+}
+#ft h4 {
+	margin: 0;
+	margin-bottom: 0.5em;
+	text-transform: uppercase;
+}
+.ft-col {
+	width: 203px;
+}
+/* @end ft */
+
+/* @group ft-comp */
+#ft-comp {
+	width: 203px;
+	overflow: hidden;
+}
+#ft-comp img {
+	float: left;
+	display: block;
+	margin: 0 10px 40px 0;
+}
+#ft-comp p {
+	margin: 0 0 5px 0;
+}
+#ft-comp a {
+	font-weight: bold;
+}
+/* @end ft-comp */
+
+/* @group ft-connect */
+#ft-connect li {
+	padding-left: 22px;
+}
+#yt {
+	background:url(../images/youtube.png) no-repeat 0 50%;
+}
+#fb {
+	background:url(../images/facebook.png) no-repeat 0 50%;
+}
+#bb {
+	background:url(../images/bebo.png) no-repeat 0 50%;
+}
+#tt {
+	background:url(../images/twitter.png) no-repeat 0 50%;
+}
+/* @end ft-connect */
+
+/* @group ft-contact */
+#ft-contact {
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+.adr {
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.adr p {
+	margin: 0;
+}
+/* @end ft-contact */
+
+/* @group Copyright */
+#copyright {
+	color: #fff;
+	text-align: center;
+}
+#copyright p {
+	color: #fff;
+	margin-bottom: 10px;
+}
+#copyright p a {
+	color: #fff;
+	font-weight: normal;
+}
+#copyright p a:hover {
+	color: #ccc;
+}
+/* @end Copyright */
+
+/* @group Mezz */
+#mezz-screenshots {
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	background: #efefef;
+	padding: 10px;
+	text-align:center;
+	width: 580px;
+}
+#slider {
+	margin-bottom: 10px;
+}
+#slider-wrap {
+	overflow: hidden;
+}
+#slider-wrap ul {
+	overflow:hidden;
+}
+#slider-wrap li {
+	height: 436px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 580px;
+}
+/* @end Mezz */
+
+/* @group Index Item */
+
+.index-item {
+	margin-top: -10px;
+}
+.index-item li {
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 15px;
+}
+.index-item-content {
+	margin: 1em 1em 0 1em;
+	position: relative;
+	overflow: hidden;
+}
+.index-item-text{
+	width:640px;
+	position:relative;
+	display:inline;
+	height:auto;
+}
+.index-item .thumbnail {
+	display: block;
+	float: left;
+	margin: 0 20px 30px 0;
+}
+.index-item h2 a {
+	color: #103253;
+	font-weight: normal;
+}
+.index-item p {
+	margin-bottom: 5px;
+}
+/* @end Index Item */
+
+
+/* @group Map */
+#map {
+	background: #f2f2f2;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+/* @end Map */
+
+/* @group Prices */
+.prices {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.prices h3 {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.prices table {
+	width: 590px;
+}
+.prices th, .prices td {
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	font-size: 10px;
+	padding: 2px 2px;
+	text-align: center;
+}
+.prices th {
+	color: #000;
+}
+.prices th.align-left {
+	text-align: left;
+	padding-left: 5px;
+}
+.prices ol {
+	border-top: 1px solid #ccc;
+	padding-top: 10px;
+	list-style-position:inside;
+}
+/* @end Prices */
+
+/* @group Brannigan Meal Deals */
+.md-content {
+	margin-left: 120px;
+}
+.md-price {
+	background: url(../images/tag_yellow.html) no-repeat 0 50%;
+	padding-left: 20px;
+	font-style: italic;
+}
+#md-brannigans li {
+	border-bottom: none;
+	margin-bottom: 10px;
+	padding-left: 40px;
+}
+#b-one {
+	background: url(../images/one.html) no-repeat;
+}
+#b-two {
+	background: url(../images/two.html) no-repeat;
+}
+#b-three {
+	background: url(../images/three.html) no-repeat;
+}
+#md-brannigans h3 {
+	color: #103253;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+}
+#md-brannigans p {
+	margin: 0;
+}
+/* @end */
+
+/* @group Coming Soon */
+
+.cs-content {
+	margin-left: 128px;
+}
+.cs-content th {
+	padding-right: 10px;
+}
+/* @end */
+
+/* @group Kids Club */
+
+#kids-club li {
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#kids-club li h3 {
+	margin-bottom: 5px;
+}
+/* @end Kids Club */
+
+
+/* @group Contact */
+
+.vcard {
+	font-size: 14px;
+}
+.org {
+	color: #000;
+}
+.adr a {
+	color: #333;
+	font-weight: normal;
+}
+#get-in-touch {
+	width: 75%;
+}
+#get-in-touch th {
+	width: 120px;
+}
+#get-in-touch a {
+	color: #333;
+	font-weight: normal;
+}
+#get-in-touch p {
+	color:#999;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+/* @end Contact */
+
+
+/* @group Important */
+
+.important {
+	margin-left: 120px;
+	width: 75%;
+}
+.important h3 {
+	background: url(../images/alert.html) no-repeat 0 50%;
+	border-bottom: 1px solid #e2dab2;
+	color: #9f8400;
+	font-size: 12px;
+	line-height: 2em;
+	padding-left: 15px;
+}
+.important ol {
+	list-style-position: inside;
+}
+.important li {
+	border-bottom: 1px solid #efefef;
+	line-height: 2em;
+}
+/* @end */
+
+/* @group Icon Block */
+
+.icon-block img {
+	display: block;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+.icon-block h2 {
+	color: #9F8400;
+	font-family: Georgia;
+	font-style: italic;
+}
+/* @end Icon Block */
+
+/* @group Comp Enter */
+#comp-enter {
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+}
+#comp-enter p {
+	font-size: 18px;
+	font-weight: normal;
+}
+#comp-enter fieldset label {
+	padding-right: 10px;
+}
+#comp-enter li {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px 0;
+}
+#comp-enter li label {
+	display: block;
+	float: left;
+	width: 110px;
+	text-align: left;
+}
+#comp-enter li input {
+	width: 200px;
+}
+#comp-enter-btn {
+	margin: 0 0 10px 108px;
+}
+/* @end Comp Enter */
+
+
+.grid-5x3 {
+	width: 630px;
+	overflow: hidden;
+}
+.grid-5x3 .col1 {
+	float: left;
+	width: 390px;
+}
+.grid-5x3 .col2 {
+	float: right;
+	width: 230px;
+}
+#phone li {
+	margin-bottom: 10px;
+}
+#phone h3 {
+	color: #333;
+	font-size: 12px;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
+#contact-form {
+	background-color: #efefef;
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+}
+#contact-form li {
+	margin-bottom: 10px;
+}
+#contact-form label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#name, #email, #subject, #message {
+	border: 1px solid #ccc;
+	padding: 3px;
+	font-size: 14px;
+}
+#name, #email {
+	width: 340px;
+}
+#subject {
+	width: 349px;
+}
+/*****Loyalty Registration / Login START*********/
+#loyreg-form {
+	display:block;
+	background-color: #efefef;
+	border-bottom: 1px solid #ccc;
+	padding: 30px;
+}
+#loyreg-form li {
+	margin-bottom: 10px;
+}
+#loyreg-form label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#lname, #lemail, #lpassword {
+	display: block;
+	border: 1px solid #8e8e8e;
+	padding: 3px;
+	font-size: 14px;
+}
+#lname, #lemail, #lpassword{
+	width: 530px;
+}
+.cbx{
+	width:20px;
+	height:20px;
+	border-style:solid;
+	border: 1px solid #00315d;
+}
+/*****Loyalty Registration / Login END*********/
+/*****Loyalty Accout Page START*********/
+#loyacc-form {
+	display:block;
+	background-color: #efefef;
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+.lTitle{
+	font-size: 1.8em;
+	line-height: 1.8em; 			
+	margin-top: 0;
+	margin-bottom:5px;
+	color: #8c8c8c;
+	font-weight: normal;
+}
+.lText{
+	font-size: 1em;
+	line-height: 1em; 			
+	margin-top: 0;
+	color: #000000;
+	font-weight: normal;
+}
+.lblue{
+	font-size:1.3em;
+	color:#032f54;
+	font-weight:bold;
+}
+/*****Loyalty Accout Page END*********/
+
+
+.ap .caps        {text-transform:uppercase;}
+.ap .right       {float:right; margin-left:20px;}
+.ap .left        {float:left; margin-left:20px;}
+.ap .heading     {text-align:center;}
+.ap .heading h1  {display:inline-block; zoom:1; *display:inline; border:0px;}
+.ap .heading img {display:inline-block; zoom:1; *display:inline; margin:5px 20px;}
+
+.ap .email_signup        {font-weight:bold; text-align:center; margin-top:6px; margin-bottom:0px;}
+
+.ap #signup fieldset     {border:3px solid #666;}
+.ap #signup fieldset li input {display:inline-block; width:180px;}
+.ap #signup fieldset li select {display:inline-block; width:180px;}
+.ap #signup fieldset p   {padding:8px; font-weight:bold;}
+.ap #signup fieldset ul  {padding:8px;}
+.ap #signup fieldset li  {display:block; border-top:1px solid #999; padding:3px;}
+.ap #signup fieldset li li {border-top:0px; margin-left:20px;}
+.ap #signup li li label  {width:8em;}
+.ap #signup legend       {font-weight:bold; font-size:1.4em; padding:6px; margin-top:10px;}    
+.ap #signup label        {display:inline-block; width:400px;}
+.ap #signup .fail        {background:#fcc;}
+
+.dottedLi {
+
+}
+
+.dottedLi ul {
+list-style-type:circle;
+}
+
+.dottedLi li {
+list-style-type:circle;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+#showing {
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	height: 310px;
+	width: 628px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#showing a {
+	border: none;
+}
+
+#showing h2 {
+	color: #999;
+	font-size: 1.5em;	/* 18px */
+	font-weight: normal;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	margin: 0;
+	background:none;
+	border:none;
+}
+
+/*  
+    root element for the scrollable.  
+    when scrolling occurs this element stays still.  
+*/ 
+div.scrollable { 
+    /* required settings */
+    /* position:relative; */
+    overflow:hidden;
+    /*width: 530px;*/
+    /* height: 235px; */
+    /*top: 15px;
+		left: 50px;*/
+} 
+ 
+/*  
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a super large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+div.scrollable div.items {
+    /* this cannot be too large  
+    width:20000em;     
+    position:absolute;*/
+}
+
+div.scrollable div.items img {
+	background-color: #fff;
+    border: 1px solid #cdcdcd;
+	padding: 2px;
+} 
+ 
+/*  
+    a single item. must be floated on horizontal scrolling 
+    typically this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable div.items div {
+	background-color: #fff;
+    border: 1px solid #fff;
+	border-bottom-color: #e9e9e9;
+	border-right-color: #e9e9e9;
+	float: left;
+	width: 125px;
+	height: 235px;
+	/*margin-right: 9px;*/
+	position: relative;
+}
+
+div.scrollable div.items div.item-hover {
+	background-color: #fcfcfc;
+}
+
+div.scrollable div.items div a {
+	display: block;
+	margin: 11px 0 5px 11px;
+	width: 95px;
+}
+
+div.scrollable div.items div h3 {
+	font-size: 1em;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+div.scrollable div.items div p {
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+div.scrollable div.items div a.ticket-btn {
+	background: url(../images/showing-tickets-btn.png) no-repeat;
+	display: block;
+	height: 22px;
+	width: 101px;
+	text-indent: -9999px;
+	margin: 0 10px;
+	position: absolute;
+	bottom: 10px;
+}
+
+div.scrollable div.items div a.ticket-btn:hover {
+	background-position: 0 -22px;
+}
+ 
+/* you may want to setup some decorations to active item */ 
+div.items div.active { 
+    border:1px inset #ccc;         
+    background-color:#fff;
+}
+
+/* this makes it possible to add next button beside scrollable */
+div.scrollable {
+	/*float:left;*/		
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:19px;
+	height:236px;
+	background: url(../images/showing-prev.png) no-repeat;
+	/*float:left;*/
+	/*margin:43px 10px;*/
+	cursor:pointer;
+	position: absolute;
+}
+
+a.prev, a.prevPage {
+	bottom: 20px;
+	left: 22px;
+}
+
+a.next, a.nextPage {
+	bottom: 20px;
+	right: 22px;
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position: -19px 0;	
+}
+
+/* disabled navigational button */
+a.disabled {
+	/*visibility:hidden !important;*/		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background: url(../images/showing-next.png) no-repeat;
+	/*clear:right;*/
+}
+
+/*********** navigator ***********/
+
+/* position and dimensions of the navigator */
+div.navi {
+	padding-top: 20px;
+	margin-left:230px;
+	width:200px;
+	height:20px;
+}
+
+/* items inside navigator */
+div.navi a {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:3px;
+	background:url(navigator.html) 0 0 no-repeat;     
+	cursor:pointer;	
+}
+
+/* mouseover state */
+div.navi a:hover {
+	background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+div.navi a.active {
+	background-position:0 -16px;    
+}

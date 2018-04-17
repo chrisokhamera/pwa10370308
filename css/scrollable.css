@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+#showing {
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	height: 236px;
+	width: 628px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#showing a {
+	border: none;
+}
+
+#showing h2 {
+	color: #999;
+	font-size: 1.5em;	/* 18px */
+	font-weight: normal;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	margin: 0;
+}
+
+/*  
+    root element for the scrollable.  
+    when scrolling occurs this element stays still.  
+*/ 
+div.scrollable { 
+    /* required settings */ 
+    position:relative; 
+    overflow:hidden;          
+    /*width: 530px;*/
+    height: 235px;
+	/*top: 15px;
+    left: 50px;*/
+} 
+ 
+/*  
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a super large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+div.scrollable div.items {
+    /* this cannot be too large  
+    width:20000em;     
+    position:absolute;*/
+}
+
+div.scrollable div.items img {
+	background-color: #fff;
+    border: 1px solid #cdcdcd;
+	padding: 2px;
+} 
+ 
+/*  
+    a single item. must be floated on horizontal scrolling 
+    typically this element is the one that *you* will style 
+    the most. 
+*/ 
+div.scrollable div.items div {
+	background-color: #fff;
+	border: 1px solid #fff;
+	border-bottom-color: #e9e9e9;
+	border-right-color: #e9e9e9;
+	float: left;
+	width: 23%;
+	/* max-width: 123.6px; */
+	height: 235px;
+	/*margin-right: 9px;*/
+	position: relative;
+}
+
+div.scrollable div.items div.item-hover {
+	background-color: #fcfcfc;
+}
+
+div.scrollable div.items div a {
+	display: block;
+	/* margin: 11px 0 5px 11px; */
+	width: 95px;
+}
+
+div.scrollable div.items div h3 {
+	font-size: 1em;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	/* width: 55%; */
+}
+
+div.scrollable div.items div p {
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+div.scrollable div.items div a.ticket-btn {
+	background: url(../images/showing-tickets-btn.png) no-repeat;
+	display: block;
+	height: 22px;
+	width: 101px;
+	text-indent: -9999px;
+	margin: 0 18px;
+	position: absolute;
+	bottom: 1px;
+}
+
+div.scrollable div.items div a.ticket-btn:hover {
+	background-position: 0 -22px;
+}
+ 
+/* you may want to setup some decorations to active item */ 
+div.items div.active { 
+    border:1px inset #ccc;         
+    background-color:#fff;
+}
+
+/* this makes it possible to add next button beside scrollable */
+div.scrollable {
+	/*float:left;*/		
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.prev, a.next, a.prevPage, a.nextPage {
+	display:block;
+	width:19px;
+	height:236px;
+	background: url(../images/showing-prev.png) no-repeat;
+	/*float:left;*/
+	/*margin:43px 10px;*/
+	cursor:pointer;
+	position: absolute;
+}
+
+a.prev, a.prevPage {
+	bottom: 20px;
+	left: 22px;
+}
+
+a.next, a.nextPage {
+	bottom: 20px;
+	right: 22px;
+}
+
+/* mouseover state */
+a.prev:hover, a.next:hover, a.prevPage:hover, a.nextPage:hover {
+	background-position: -19px 0;	
+}
+
+/* disabled navigational button */
+a.disabled {
+	/*visibility:hidden !important;*/		
+}
+
+/* next button uses another background image */
+a.next, a.nextPage {
+	background: url(../images/showing-next.png) no-repeat;
+	/*clear:right;*/
+}
+
+/*********** navigator ***********/
+
+/* position and dimensions of the navigator */
+div.navi {
+	padding-top: 20px;
+	margin-left:230px;
+	width:200px;
+	height:20px;
+}
+
+/* items inside navigator */
+div.navi a {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:3px;
+	background:url(navigator.html) 0 0 no-repeat;     
+	cursor:pointer;	
+}
+
+/* mouseover state */
+div.navi a:hover {
+	background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+div.navi a.active {
+	background-position:0 -16px;    
+}

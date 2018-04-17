@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery with JSON Data</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<style>
+
+.seat { border: solid 1px red; width: 50px; height: 50px ; margin: 5px;}
+
+.reserved { background-color: red }
+.available {background-color: yellow }
+.selected { background-color: green }
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="row">
+<div class="col-md-6">
+
+	<select id="chooseAnOption">
+	<option value="0">Select an item</option>
+	<option value="1">First</option>
+	<option value="2">Second</option>
+	<option value="3">third</option>
+	<option value="4">Fourth</option>
+	<option value="5">Fifth</option>
+	
+	
+	</select>
+	
+	
+	
+		<select id="chooseDay">
+	<option value="0">Select an day</option>
+	<option value="mon">Mon</option>
+	<option value="tue">Tue</option>
+	<option value="wed">Wed</option>
+	
+	
+	
+	</select>
+	
+	
+	
+</div>
+</div> <!-- row -->
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="dayItem alert alert-primary" role="alert" id="mon" style="display: none">
+			<button id="bookSeating">Book Seating</button>
+			<ul id='ulMon'>
+			
+			</ul>
+			
+			
+		</div>
+	
+	</div>
+	<div class="col-md-4">
+	<div class="dayItem alert alert-primary" role="alert" id="tue" style="display: none">
+			Tuesday
+		</div>
+	</div><!-- /col 2 -->
+	<div class="col-md-4">
+	<div class="dayItem alert alert-primary" role="alert" id="wed" style="display: none">
+			Wednesday
+		</div>
+	
+	</div><!-- /col 3 -->
+</div>
+
+
+
+
+</div> <!-- container -->
+
+<div class="container" id="seatingLayout" style="display: none">
+<div class="row">
+
+<div class="seat reserved" data-row="1" data-col="1"></div>
+<div class="seat available" data-row="8" data-col="2"></div>
+<div class="seat available" data-row="7" data-col="3"></div>
+<div class="seat available" data-row="6" data-col="4"></div>
+<div class="seat available" data-row="5" data-col="5"></div>
+
+
+</div>
+
+
+
+</div>
+
+
+<script>
+$(function () {
+
+
+	$('#chooseAnOption').on('change', function () {
+
+		console.log("Select has changed value",$(this).val());
+		var changedValue = parseInt($(this).val());
+		console.log("Select has changed value to %d", changedValue);
+
+		
+		
+		var chosentext = $("#chooseAnOption :selected").text();
+		console.log("Chosen text is now %s", chosentext);
+
+	});
+
+
+	$('#bookSeating').on("click", function () {
+
+	$('#seatingLayout').show();
+
+	});
+
+
+})
+
+
+
+$(function () {
+
+$(".seat").on("click", function() {
+
+
+	if (! $(this).hasClass("reserved") ) {
+	
+			//$(this).addClass("selected");
+			$(this).toggleClass("selected");
+			
+			var countSelected = $(".seat.selected").length;
+			
+			console.log("Count selected is %d",countSelected);
+			
+			 $( ".seat.selected" ).each(function( index, element ) {
+					console.log("You chose row %d and col %d", $(this).data("row"),$(this).data("col"));
+  });
+			
+			
+			
+			
+	}
+
+
+
+} );
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function () {
+
+var url = 'movie.json';
+$.ajax({
+  dataType: "json",
+  url: url,
+  
+  success: function (result) { 
+  
+   var tmpResult = result.slice(1,10);
+	console.log(tmpResult);
+	
+	
+	for(var i = 0; i < tmpResult.length; i++) {
+	
+		$('#ulMon').append("<li>" + tmpResult[i]['title'] + "</li>");
+		
+		console.log( tmpResult[i]['runningTimes']);
+		
+		var ulString = "<ul>";
+		for(var j = 0; j < tmpResult[i]['runningTimes']['mon'].length; j++) {
+		
+		ulString += "<li>" + tmpResult[i]['runningTimes']['mon'][j] + "</li>";
+
+		}
+		ulString += "</ul>";
+		
+		
+		$('#ulMon').append(ulString);
+
+	}
+	
+	
+	
+
+  }
+  
+  
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(function () {
+
+
+$('#chooseDay').on('change', function () {
+
+
+
+
+	console.log("Select has changed value",$(this).val());
+	var changedValue = $(this).val();
+	console.log("Select has changed value to %s", changedValue);
+	
+	//Hide all dayItems
+	 $('.dayItem').hide();
+	 $('#seatingLayout').hide();
+
+	
+	//Build up an id and then use it to hide / show items	
+	var dayId = '#' + changedValue; // eg # + mon
+	$(dayId).show();
+	
+	
+	var chosentext = $("#chooseDay :selected").text();
+	console.log("Chosen text is now %s", chosentext);
+
+});
+
+})
+
+
+
+
+</script>
+
+</body>
+</html>
