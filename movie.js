@@ -67,7 +67,7 @@ $(function () {
 		
 				}
 			
-				ulString += "<button id='bookSeating' class='btn btn-primary'>Book Seat(s)</button></td></tr></table></div><br><br>"
+				ulString += "</td></tr></table></div><br><br>"
 				
 				$('#ulMon').append(ulString);
 			}

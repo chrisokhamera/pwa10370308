@@ -12,13 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var dataCacheName = 'weatherData-v1';
-var cacheName = 'weatherPWA-final-1';
+var dataCacheName = 'moviesData-v1';
+var cacheName = 'moviesPWA';
 var filesToCache = [
   '/',
   '/index.html',
+  '/contact.html',
+  '/directions.html',
   '/movie.js',
-  '/styles/style.css',
+  '/movie.json',
+  '/bacgroundimages/Page-wrapper-Love-simon-2.jpg',
+  '/styles/inline.css',
   '/css/style.css',
   '/css/bootstrap.min.css',
   '/css/navigator.html'

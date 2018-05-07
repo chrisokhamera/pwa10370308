@@ -15,6 +15,7 @@
 	<link href="css/style.css" rel="stylesheet" type= "text/css" />
 	<link href="css/bootstrap.min.css" rel="stylesheet" type= "text/css" />
 	<link rel="manifest" href="manifest.json">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--[if lt IE 8]>
 	<link href="/css/style_ie.css" rel="stylesheet" type= "text/css" />
 	<![endif]-->
@@ -51,7 +52,7 @@
 				<div id="nav">
 					<div id="navM-DUNDRUM">
 						<ul>
-														<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li><a href="#">Kids Club</a></li>
 							<li><a href="#">Event Cinema</a></li>
 							<li><a href="#">Coming Soon</a></li>
@@ -82,26 +83,23 @@
 							<option value="tue">TUESDAY</Option>
 								<option value="wed">WEDNESDAY</Option>
 									<option value="thur">THURSDAY</Option>
-										<option value="fri">FRIDAY</Option>
-											<option value="sat">SATURDAY</Option>
-											<option value="sun">SUNDAY</Option>
-											</select></form>
-		</div>
+									<option value="fri">FRIDAY</Option>
+								<option value="sat">SATURDAY</Option>
+							<option value="sun">SUNDAY</Option>
+					</select>
+				</form>
+			</div>
 		<div id="movies">
 				<ol>
 					<li>
 					
 							<div class="dayItem" id="mon" style="display: none">
-									
+									<button id='bookSeating' class='btn btn-primary'>Book Seat(s)</button>
 									<ul id='ulMon'>
 									
-									</ul>
-									
-									
+									</ul>	
 								</div>
-							
-							
-						
+			
 							<div class="dayItem" id="tue" style="display: none">
 									
 									<ul id='ulTue'>
@@ -159,7 +157,7 @@
 					
       <!-- #primary -->
       <div id="secondary">
-      <a style="font-size: 18px" href="https://moviesatdundrum.admit-one.eu/?p=account&amp;s=M-DUNDRUM">Register/Login To Loyalty Account</a><br />       <a href="articlef993.html?sec=EXTRAS&amp;_aid=842&amp;__site=M-DUNDRUM"><img src="images/LoyaltyBanner.jpg" /></a>
+      <a style="font-size: 18px" href="#">Register/Login To Loyalty Account</a><br />       <a href="articlef993.html?sec=EXTRAS&amp;_aid=842&amp;__site=M-DUNDRUM"><img src="images/LoyaltyBanner.jpg" /></a>
        <div class="section">
          <div class="container">
            <span style="display:block; padding:5px; background:#5F78AB; color:#fff; font-weight: bold;">Connect with Us</span>
@@ -206,7 +204,7 @@
 
 <!--End mc_embed_signup-->      </div>
       <div class="container"><a href="http://www.98fm.com/" style="display:block; padding:5px; background:#5F78AB; color:#fff;">Listen Live to 98fm</a></div>
-        <div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=33943" ><img src="articleimages/avengers_on-sale-300.jpg" alt="Avengers: Infinity War" title="Avengers: Infinity War" width="300" /></a></div><div class="container"><a href="#" ><img src="articleimages/new/weekly-film-posted.jpg" alt="Info - Schedules posted Tuesday" title="Info - Schedules posted Tuesday" /></a></div><div class="container"><a href="article02a6.html?sec=Promo&amp;_aid=9054" ><img src="articleimages/new/Get-Our-App2.jpg" alt="Download the app" title="Download the app" width="300" /></a></div><div class="container"><a href="#" ><img src="articleimages/new/Special-offers-down.jpg" alt="Special Offers & Screening" title="Special Offers & Screening" /></a></div><div class="container"><a href="articlefe59.html?sec=Promo&amp;_aid=2574" ><img src="articleimages/mmd-2018.jpg" alt="Monday Meal Deal " title="Monday Meal Deal " width="300" /></a></div><div class="container"><a href="articlee452.html?sec=CINEMAINFO&amp;_aid=2031" ><img src="articleimages/new/Darker-Student-tue.jpg" alt="Student Tues" title="Student Tues" /></a></div><div class="container"><a href="kids-club.html" ><img src="articleimages/Kids-club-2018.png" alt="Kids Club" title="Kids Club" /></a></div><div class="container"><a href="reelparents.html" ><img src="articleimages/Reel-Parents-2018.png" alt="Reel Parents" title="Reel Parents" /></a></div><div class="container"><a href="elevenses.html" ><img src="articleimages/elveneses-2018.png" alt="Elevenses" title="Elevenses" /></a></div><div class="container"><a href="special-needs.html" ><img src="articleimages/Special-Needs-2018.png" alt="Special Needs Screenings" title="Special Needs Screenings" /></a></div><div class="container"><a href="subtitled-events.html" ><img src="articleimages/new/Darker-HOH.jpg" alt="Subtitled " title="Subtitled " /></a></div><div class="container"><a href="mezz5c0d.html?__site=M-DUNDRUM" ><img src="articleimages/new/mezz.jpg" alt="The MEZZ" title="The MEZZ" /></a></div><div class="container"><a href="liveevents5c0d.html?__site=M-DUNDRUM" ><img src="articleimages/new/Event-Cinema-v2.jpg" alt="Live Events" title="Live Events" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=35304" ><img src="articleimages/RSC-Macbeth-23-03.jpg" alt="RSC Live: Macbeth (Live)" title="RSC Live: Macbeth (Live)" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=32334" ><img src="articleimages/Drillalians-23-03.jpg" alt="Drillalians: Stage Russia HD" title="Drillalians: Stage Russia HD" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=33558" ><img src="articleimages/Berliner-APRIL-13.jpg" alt="Berliner Philharmoniker LIVE Conducted by Kirill Petrenko" title="Berliner Philharmoniker LIVE Conducted by Kirill Petrenko" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=34631" ><img src="articleimages/florence26-03.jpg" alt="Florence and the Uffizi Gallery" title="Florence and the Uffizi Gallery" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=34182" ><img src="articleimages/La-Boheme-21-04.jpg" alt="LA BOHEME" title="LA BOHEME" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=31341" ><img src="articleimages/Manon-03-05.jpg" alt="Royal Ballet: Manon" title="Royal Ballet: Manon" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=37819" ><img src="articleimages/Andre-Rieu-banner-300.jpg" alt="Andr� Rieu's 2018 Maastricht Concert" title="Andr� Rieu's 2018 Maastricht Concert" width="300" /></a></div><div class="container"><a href="http://movies-at.ie/WeeklySchedule2.php?s=M-DUNDRUM&amp;printFriendly=1"  target="_blank"><img src="articleimages/printer%20friendly%20version%20opt.jpg" alt="Printer Friendly Version" title="Printer Friendly Version" width="300" /></a></div>      </div>
+        <div class="container"><a href="#" ><img src="articleimages/avengers_on-sale-300.jpg" alt="Avengers: Infinity War" title="Avengers: Infinity War" width="300" /></a></div><div class="container"><a href="#" ><img src="articleimages/new/weekly-film-posted.jpg" alt="Info - Schedules posted Tuesday" title="Info - Schedules posted Tuesday" /></a></div><div class="container"><a href="article02a6.html?sec=Promo&amp;_aid=9054" ><img src="articleimages/new/Get-Our-App2.jpg" alt="Download the app" title="Download the app" width="300" /></a></div><div class="container"><a href="#" ><img src="articleimages/new/Special-offers-down.jpg" alt="Special Offers & Screening" title="Special Offers & Screening" /></a></div><div class="container"><a href="articlefe59.html?sec=Promo&amp;_aid=2574" ><img src="articleimages/mmd-2018.jpg" alt="Monday Meal Deal " title="Monday Meal Deal " width="300" /></a></div><div class="container"><a href="articlee452.html?sec=CINEMAINFO&amp;_aid=2031" ><img src="articleimages/new/Darker-Student-tue.jpg" alt="Student Tues" title="Student Tues" /></a></div><div class="container"><a href="kids-club.html" ><img src="articleimages/Kids-club-2018.png" alt="Kids Club" title="Kids Club" /></a></div><div class="container"><a href="reelparents.html" ><img src="articleimages/Reel-Parents-2018.png" alt="Reel Parents" title="Reel Parents" /></a></div><div class="container"><a href="elevenses.html" ><img src="articleimages/elveneses-2018.png" alt="Elevenses" title="Elevenses" /></a></div><div class="container"><a href="special-needs.html" ><img src="articleimages/Special-Needs-2018.png" alt="Special Needs Screenings" title="Special Needs Screenings" /></a></div><div class="container"><a href="subtitled-events.html" ><img src="articleimages/new/Darker-HOH.jpg" alt="Subtitled " title="Subtitled " /></a></div><div class="container"><a href="mezz5c0d.html?__site=M-DUNDRUM" ><img src="articleimages/new/mezz.jpg" alt="The MEZZ" title="The MEZZ" /></a></div><div class="container"><a href="liveevents5c0d.html?__site=M-DUNDRUM" ><img src="articleimages/new/Event-Cinema-v2.jpg" alt="Live Events" title="Live Events" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=35304" ><img src="articleimages/RSC-Macbeth-23-03.jpg" alt="RSC Live: Macbeth (Live)" title="RSC Live: Macbeth (Live)" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=32334" ><img src="articleimages/Drillalians-23-03.jpg" alt="Drillalians: Stage Russia HD" title="Drillalians: Stage Russia HD" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=33558" ><img src="articleimages/Berliner-APRIL-13.jpg" alt="Berliner Philharmoniker LIVE Conducted by Kirill Petrenko" title="Berliner Philharmoniker LIVE Conducted by Kirill Petrenko" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=34631" ><img src="articleimages/florence26-03.jpg" alt="Florence and the Uffizi Gallery" title="Florence and the Uffizi Gallery" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=34182" ><img src="articleimages/La-Boheme-21-04.jpg" alt="LA BOHEME" title="LA BOHEME" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=31341" ><img src="articleimages/Manon-03-05.jpg" alt="Royal Ballet: Manon" title="Royal Ballet: Manon" width="300" /></a></div><div class="container"><a href="https://moviesatdundrum.admit-one.eu/?p=details&amp;s=M-DUNDRUM&amp;eventCode=37819" ><img src="articleimages/Andre-Rieu-banner-300.jpg" alt="Andr� Rieu's 2018 Maastricht Concert" title="Andr� Rieu's 2018 Maastricht Concert" width="300" /></a></div><div class="container"><a href="http://movies-at.ie/WeeklySchedule2.php?s=M-DUNDRUM&amp;printFriendly=1"  target="_blank"><img src="articleimages/printer%20friendly%20version%20opt.jpg" alt="Printer Friendly Version" title="Printer Friendly Version" width="300" /></a></div>      </div>
     </div>
 	</div>
 </div>
@@ -219,7 +217,7 @@
 			<h4>Got a question</h4>
 			<div id="ft-comp"><img src="images/faq.gif" />
 				<p>Our knowledge base contains answers to frequently asked questions.</p>
-				<a href="articlece50.html?sec=CINEMAINFO&amp;_aid=835">Visit now&nbsp;&#8250;</a>
+				<a href="#">Visit now&nbsp;&#8250;</a>
 				<div style="margin-top:25px"><img src="images/ecalogo.png" /></div>
 			</div>
 		</div>
@@ -241,10 +239,10 @@
 		<div class="col ft-col">
 			<h4>Cinema Information</h4>
 			<ul>
-				<li><a href="articlece50.html?sec=CINEMAINFO&amp;_aid=835">FAQ</a></li>
+				<li><a href="#">FAQ</a></li>
 				<!--<li><a href="http:///article.php?sec=CINEMAINFO&_aid=834">Prices</a></li>-->
-				<li><a href="article62a3.html?sec=EXTRAS&amp;_aid=841">Corporate Bookings</a></li>
-				<li><a href="articlelistd33e.html?sec=meals">Meal Deals</a></li>
+				<li><a href="#">Corporate Bookings</a></li>
+				<li><a href="#">Meal Deals</a></li>
 			</ul>
 		</div>
 		<div class="col span4 last-col">
@@ -286,6 +284,7 @@ $(document).ready(function() {
 
 
 </script>
+
 <script src="movie.js"></script>
 </body>
 </html>
